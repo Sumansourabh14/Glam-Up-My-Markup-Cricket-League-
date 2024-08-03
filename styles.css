@@ -1,3 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer p:first-child {
+  font-family: "Lato", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 250px 80px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(162, 225, 255, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+section {
+  padding: 140px 80px;
+}
+
+section {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 80px 40px 180px 40px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(233, 255, 233, 1) 50%,
+    rgb(8, 178, 11) 100%
+  );
+}
+
+footer p:first-child {
+  font-size: 2rem;
+}
+
+.top-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+section ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1400px;
+}
+
+section ul li {
+  padding: 1rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+
+  header,
+  section {
+    padding: 100px 40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
